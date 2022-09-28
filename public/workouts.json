@@ -1,0 +1,50 @@
+[
+  {
+    "id": "6334b0f41b46615c7652fda7",
+    "picture": "https://cdn.mos.cms.futurecdn.net/oYDbf5hQAePHEBNZTQMXRA-415-80.jpg",
+    "age": 28,
+    "time": 45,
+    "name": "Push-Up",
+    "about": "Traditional pushups are beneficial for building upper body strength. They work the triceps, pectoral muscles, and shoulders."
+  },
+  {
+    "id": "6334b0f41193f74e4cf0ff35",
+    "picture": "https://images.livemint.com/img/2021/07/14/1140x641/iStock-1061852042_1626264735193_1626264750658.jpg",
+    "age": 38,
+    "time": 45,
+    "name": "Squat",
+    "about": "Squats burn calories and might help you lose weight. They also lower your chances of injuring your knees and ankles."
+  },
+  {
+    "id": "6334b0f45ea2a75bf3b2411e",
+    "picture": "https://www.muscleandfitness.com/wp-content/uploads/2020/03/1109-Man-Woman-Dumbbell-Workout-GettyImages-668764717.jpg",
+    "age": 31,
+    "time": 45,
+    "name": "Dumble",
+    "about": "Sit on a bench with dumbbells held in front of you, palms facing your shoulders as though you've just finished a bicep curl."
+  },
+  {
+    "id": "6334b0f4c3a442c0cb9b8973",
+    "picture": "https://www.muscleandfitness.com/wp-content/uploads/2019/02/1109-Barbell-Back-Squat-John-Gaines.jpg",
+    "age": 22,
+    "time": 45,
+    "name": "Lunges",
+    "about": "When the spirits are low, when the day appears dark, when work becomes monotonous, when hope hardly seems worth having, just mount a bicycle"
+  },
+  {
+    "id": "6334b0f46cce153485ea8af8",
+    "picture": "https://www.muscleandfitness.com/wp-content/uploads/2017/07/1109-ryan-terry-weighted-crunch-abs.jpg",
+    "age": 24,
+    "time": 45,
+    "name": "Abs-Workout",
+    "about": "Tummy-toning moves. We live in an age where rock-hard, six-pack abdominal muscles are the goal of many workout enthusiasts"
+  },
+  {
+    "id": "6334b0f4bc9509e642b4651a",
+    "picture": "https://www.muscleandperformance.com/wp-content/uploads/2018/03/pull-ups-for-bigger-back.jpg",
+    "age": 29,
+    "time": 45,
+    "name": "Pull Up",
+    "about": "Founded by self-proclaimed “nerd” Steve Kamb, this blog aims to educate others so that they don’t make the same weight-loss mistakes Kamb did in the past."
+  }
+]

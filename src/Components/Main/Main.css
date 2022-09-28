@@ -1,0 +1,12 @@
+.main-container{
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+}
+
+.workouts-container{
+  border: 2px solid red;
+}
+
+.list-container{
+border: 2px solid black;
+}

@@ -1,9 +1,10 @@
 import React from 'react';
 import './Workout.css'
 
-const Workout = ({exercise}) => {
+const Workout = ({exercise, addHandlerToBtn}) => {
   // const {exercise} = exercise;
   const {name, image, age, time, about} = exercise;
+
   return (
     <div className='workout-container'>
       <img src={image} alt="" />
@@ -13,7 +14,7 @@ const Workout = ({exercise}) => {
       <p>For Age: <strong>{age}+</strong></p>
       <p>Time Required: <strong>{time}s</strong></p>
     </div>
-    <button className='btn-add'><p>Add To List</p></button>
+    <button onClick={() => addHandlerToBtn(exercise)} className='btn-add'><p>Add To List</p></button>
     </div>
   );
 };

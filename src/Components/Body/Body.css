@@ -1,6 +1,7 @@
 .body-container{
   display: grid;
   grid-template-columns: 3fr 1fr;
+  /* margin-bottom: 50px; */
 }
 .main-bg{
   background-color: #CAD5E2;
@@ -18,7 +19,7 @@
   margin-top: 40px;
 }
 .logo-img{
-  
+
 }
 .sidebar{
   /* border: 1px solid red; */

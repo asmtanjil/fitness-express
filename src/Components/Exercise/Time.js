@@ -7,7 +7,7 @@ const Time = () => {
       <h3>Exercise Time</h3>
       <div className="time-container">
         <div className="time-details">
-           <h3>Exercise Time</h3>
+           <h3>Exercise Time: </h3>
            <p className='count-time'>200s</p>
         </div>
         <div className="time-details">

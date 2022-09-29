@@ -6,13 +6,27 @@ import Sidebar from '../Sidebar/Sidebar';
 
 
 const Body = () => {
+  // States
+  
   const [exercises, setExercises] = useState([]);
+  const [list, setList] = useState([]);
+
+
+// States 
 
   useEffect(() => {
     fetch('workouts.json')
     .then(res => res.json())
     .then(data => setExercises(data))
   }, [])
+
+// EventListener
+
+  const addHandlerToBtn = (exercise) =>{
+    console.log(exercise);
+    const newList = [...list, exercise];
+    setList(newList);
+  }
 
   return (
     <div className='body-container'>
@@ -28,13 +42,14 @@ const Body = () => {
       exercises.map(exercise => <Main
         key = {exercise.id}
         exercise = {exercise}
+        addHandlerToBtn = {addHandlerToBtn}
       ></Main>)
       }
         </div>
       </div>
       </div>
       <div className="sidebar">
-        <Sidebar></Sidebar>
+        <Sidebar list={list}></Sidebar>
       </div>
     </div>
   );

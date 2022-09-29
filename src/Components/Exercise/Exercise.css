@@ -24,3 +24,10 @@
   position: absolute;
   bottom: 0;
 }
+.btn-time{
+  border:none;
+  border-radius: 10px;
+  background-color: coral;
+  font-size: 18px;
+  font-weight: bold;
+}

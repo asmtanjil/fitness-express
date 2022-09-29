@@ -1,8 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Exercise.css'
 
 const Exercise = (props) => {
   const {time, image, about, name, age, addHandlerToBtn} = props.cart;
+  const [laiser, setLaiser] = useState(0);
+  const dataStore = localStorage.getItem('time')
+  const tenSec =()=>{setLaiser(10)
+  localStorage.setItem('time', 10);
+  }
+  const twintySec =()=>{
+    setLaiser(20)
+  localStorage.setItem('time', 20);
+  }
+  const thirtySec =()=>{
+    setLaiser(30)
+  localStorage.setItem('time', 30);
+  }
+  const fourtySec =()=>{
+    setLaiser(40)
+  localStorage.setItem('time', 40);
+  }
 
   return (
     <div>
@@ -25,6 +42,12 @@ const Exercise = (props) => {
           </div>
         </div>
       </div>
+      <dir>
+        <button onClick={() => tenSec()} className='btn-time'>10s</button>
+        <button onClick={() => twintySec()} className='btn-time'>20s</button>
+        <button onClick={() => thirtySec()} className='btn-time'>30s</button>
+        <button onClick={() => fourtySec()} className='btn-time'>40s</button>
+      </dir>
     </div>
   );
 };

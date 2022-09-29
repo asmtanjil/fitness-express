@@ -14,7 +14,7 @@ const Workout = ({exercise, addHandlerToBtn}) => {
       <p>For Age: <strong>{age}+</strong></p>
       <p>Time Required: <strong>{time}s</strong></p>
     </div>
-    <button onClick={() => addHandlerToBtn(exercise)} className='btn-add'><p>Add To List</p></button>
+    <button onClick={() => addHandlerToBtn(time)} className='btn-add'><p>Add To List</p></button>
     </div>
   );
 };

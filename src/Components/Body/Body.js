@@ -9,7 +9,7 @@ const Body = () => {
   // States
   
   const [exercises, setExercises] = useState([]);
-  const [list, setList] = useState([]);
+  const [list, setList] = useState(0);
 
 
 // States 
@@ -23,8 +23,8 @@ const Body = () => {
 // EventListener
 
   const addHandlerToBtn = (exercise) =>{
-    console.log(exercise);
-    const newList = [...list, exercise];
+    // console.log(exercise);
+    const newList = list + exercise;
     setList(newList);
   }
 

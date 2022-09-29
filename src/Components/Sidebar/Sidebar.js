@@ -3,7 +3,7 @@ import logo from '../../images/mypic.png';
 import Break from '../Break/Break';
 import './Sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = ({list}) => {
 
   return (
     <div className='sidebar-container'>
@@ -30,7 +30,7 @@ const Sidebar = () => {
         <p className='detail-container'>Age</p>
         </div>
       </div>
-      <Break></Break>
+      <Break list={list}></Break>
     </div>
   );
 };

@@ -1,8 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../images/Logo.svg'
 import './Sidebar.css'
 
-const Sidebar = () => {
+
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
+
+
+
+
+const Sidebar = ({time}) => {
+  const [laiser, setLaiser] = useState(0);
+  const dataStore = localStorage.getItem('time')
+  const tenSec =()=>{setLaiser(10)
+  localStorage.setItem('time', 10);
+  }
+  const twintySec =()=>{
+    setLaiser(20)
+  localStorage.setItem('time', 20);
+  }
+  const thirtySec =()=>{
+    setLaiser(30)
+  localStorage.setItem('time', 30);
+  }
+  const fourtySec =()=>{
+    setLaiser(40)
+  localStorage.setItem('time', 40);
+  }
+  const notify = () => toast("Wow I have Completed My Exercise!");
+  let totalEx = 0;
+  for(const total of time){
+    totalEx = totalEx + total.time
+  }
   return (
     <div>
       <div className='sidebar-container'>
@@ -28,6 +58,29 @@ const Sidebar = () => {
         <p><strong className='detail-number'>27</strong>Years</p>
         <p className='detail-container'>Age</p>
         </div>
+      </div>
+    </div>
+    <div>
+        <button onClick={() => tenSec()} className='btn-time'>10s</button>
+        <button onClick={() => twintySec()} className='btn-time'>20s</button>
+        <button onClick={() => thirtySec()} className='btn-time'>30s</button>
+        <button onClick={() => fourtySec()} className='btn-time'>40s</button>
+      </div>
+      <div>
+      <h3>Exercise Time</h3>
+      <div className="time-container">
+        <div className="time-details">
+           <h3>Exercise Time</h3>
+           <p className='count-time'>{totalEx}s</p>
+        </div>
+        <div className="time-details">
+        <h3>Break Time</h3>
+           <p className='count-time'>{dataStore}s</p>
+        </div>
+      </div>
+      <div className='activity-container'>
+        <button onClick={notify} className='btn-activity'><p>Finish Exercise</p></button>
+        <ToastContainer/>
       </div>
     </div>
     </div>

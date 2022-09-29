@@ -1,0 +1,35 @@
+.workout-container{
+  border: 1px solid lightgray;
+  width: 300px;
+  height: 500px;
+  border-radius: 7px;
+  position: relative;
+}
+.workout-container img{
+  width: 285px;
+  height: 180px;
+  margin: 7px;
+  border-radius: 7px;
+}
+.workout-info{
+  margin-left: 12px;
+  margin-right: 12px;
+}
+.workout-data{
+  color: gray;
+}
+.workout-info h4{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.btn-add{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 0 0 8px 8px;
+}
+.btn-add:hover{
+  background-color: coral;
+}

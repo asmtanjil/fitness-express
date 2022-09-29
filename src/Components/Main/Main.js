@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Workout from '../Workout/Workout';
 import './Main.css'
-import logo from '../../images/Logo.png'
 
 const Main = () => {
+  const [exercises, setExercises] = useState([]);
+
+  useEffect(() => {
+    fetch('workouts.json')
+    .then(res => res.json())
+    .then(data => setExercises(data))
+  }, [])
   return (
     <div className='main-container'>
-      <div className="workouts-container">
-          <h1><img src={logo} alt="" /> FITNESS-EXPRESS</h1>
-      </div>
-      <div className="list-container">
-          <h3>Ma</h3>
-      </div>
+      {
+      exercises.map(exercise => <Workout
+      key = {exercise.id}
+      exercise = {exercise}
+      ></Workout>)
+      }
     </div>
   );
 };

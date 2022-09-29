@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Main from './Components/Main/Main';
+import Body from './Components/Body/Body';
 
 function App() {
   return (
     <div>
-      <Main></Main>
+      <Body></Body>
     </div>
   );
 }

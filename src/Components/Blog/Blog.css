@@ -1,4 +1,8 @@
 .blog-container{
- background-color: #120E43;
+ background-color: #23C4ED;
  margin: 100px 10px;
+ color: black;
+}
+.question{
+  padding: 20px;
 }

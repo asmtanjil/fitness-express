@@ -3,7 +3,8 @@ import logo from '../../images/mypic.png';
 import Break from '../Break/Break';
 import './Sidebar.css'
 
-const Sidebar = ({list}) => {
+const Sidebar = () => {
+
   return (
     <div className='sidebar-container'>
       <div className='sidebar-header'>

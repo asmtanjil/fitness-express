@@ -1,20 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import Exercise from '../Exercise/Exercise';
+import Sidebar from '../Sidebar/Sidebar';
 import './Workout.css'
 
-const Workout = ({exercise, addHandlerToBtn}) => {
-  // const {exercise} = exercise;
-  const {name, image, age, time, about} = exercise;
+const Workout = () => {
+  const [carts,setCarts] = useState([])
+  const [time,setTime] = useState([])
+
+  useEffect(() => {
+    fetch('workouts.json')
+    .then(res => res.json())
+    .then(data => setCarts(data));
+  }, [])
+
+ const addHandlerToBtn = (cart) => {
+  const newTime = [...time, cart];
+  setTime(newTime);
+ }
 
   return (
-    <div className='workout-container'>
-      <img src={image} alt="" />
-    <div className='workout-info'>
-      <h4>{name}</h4>
-      <p className='workout-data'>{about}</p>
-      <p>For Age: <strong>{age}+</strong></p>
-      <p>Time Required: <strong>{time}s</strong></p>
-    </div>
-    <button onClick={() => addHandlerToBtn(time)} className='btn-add'><p>Add To List</p></button>
+    <div>
+       <div className='workout-container'>
+        <div className='cart-container'>
+       {
+      carts.map(cart => <Exercise cart={cart} addHandlerToBtn={addHandlerToBtn}></Exercise>)
+       }
+       </div>
+       <div>
+        <Sidebar time={time}></Sidebar>
+       </div>
+       </div>
+       
     </div>
   );
 };

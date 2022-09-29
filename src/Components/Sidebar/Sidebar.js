@@ -1,12 +1,11 @@
 import React from 'react';
-import logo from '../../images/mypic.png';
-import Break from '../Break/Break';
+import logo from '../../images/Logo.svg'
 import './Sidebar.css'
 
-const Sidebar = ({list}) => {
-
+const Sidebar = () => {
   return (
-    <div className='sidebar-container'>
+    <div>
+      <div className='sidebar-container'>
       <div className='sidebar-header'>
       <div>
       <img src={logo} alt="" />
@@ -30,9 +29,10 @@ const Sidebar = ({list}) => {
         <p className='detail-container'>Age</p>
         </div>
       </div>
-      <Break list={list}></Break>
+    </div>
     </div>
   );
 };
 
 export default Sidebar;
+

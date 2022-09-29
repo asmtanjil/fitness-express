@@ -1,12 +1,12 @@
 import './App.css';
 import Blog from './Components/Blog/Blog';
-import Body from './Components/Body/Body';
+import Workout from './Components/Workout/Workout';
 
 function App() {
   return (
     <div>
-      <Body></Body>
-      <Blog></Blog>
+      <Workout></Workout>
+      {/* <Blog></Blog> */}
     </div>
   );
 }

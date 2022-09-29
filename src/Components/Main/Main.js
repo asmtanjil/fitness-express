@@ -1,13 +1,13 @@
-import Workout from '../Workout/Workout';
-import './Main.css'
+// import Workout from '../Workout/Workout';
+// import './Main.css'
 
-const Main = (props) => {
+// const Main = (props) => {
   
-  return (
-    <div>
-      <Workout exercise={props.exercise} addHandlerToBtn={props.addHandlerToBtn}></Workout>
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <Workout exercise={props.exercise} addHandlerToBtn={props.addHandlerToBtn}></Workout>
+//     </div>
+//   );
+// };
 
-export default Main;
+// export default Main;

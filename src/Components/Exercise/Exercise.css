@@ -1,38 +1,26 @@
-/* .workout-container{
-  border: 3px solid darkgray;
-  background-color: white;
-  width: 300px;
-  height: 500px;
-  border-radius: 7px;
-  position: relative;
-}
-.workout-container img{
-  width: 285px;
+/* .workout-container img{
+  width: 280px;
   height: 180px;
-  margin: 7px;
-  border-radius: 7px;
 }
 .workout-info{
-  margin-left: 12px;
-  margin-right: 12px;
+  display: flex;
+  flex-direction: row;
+} */
+
+.card-body{
+  background-color: burlywood;
+  border: 2px solid black;
+  height: 100%;
+  position: relative;
 }
-.workout-data{
-  color: gray;
-}
-.workout-info h4{
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-.btn-add{
+.cart-img{
   width: 100%;
+  height: 250px;
+}
+.btn-card{
+  width: 100%;
+  background-color: coral;
+  height: 30px;
   position: absolute;
   bottom: 0;
-  font-size: 16px;
-  border: none;
-  border-radius: 0 0 4px 4px;
-  background-color:coral;
 }
-.btn-add:hover{
-  background-color: #1FAA59;
-  color: white;
-} */

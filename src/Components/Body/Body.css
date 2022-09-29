@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
+.main-bg{
+  background-color: #CAD5E2;
+}
 .navbar{
   display: flex;
   align-items: center;
@@ -13,6 +16,9 @@
 .main-body h1{
   color: coral;
   margin-top: 40px;
+}
+.logo-img{
+  
 }
 .sidebar{
   /* border: 1px solid red; */

@@ -1,31 +1,45 @@
-.workout-container{
+.container-bg {
+  background-color: aliceblue;
+}
+.container-body {
+  margin-left: 120px;
+  margin-bottom: 50px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav h2 {
+  color: coral;
+}
+.workout-container {
   display: grid;
   grid-template-columns: 4fr 1fr;
+  gap: 50px;
 }
-.cart-container{
+.cart-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  background-color: antiquewhite;
-  width: 80%;
-  margin: auto;
+  gap: 50px;
 }
-
-@media screen and (max-width:768px){
-  .cart-container{
+@media screen and (max-width: 1100px) {
+  .cart-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .workout-container{
-    display: flex;
-    flex-direction: column-reverse;
+  .container-body {
+    margin-left: 30px;
   }
 }
-@media screen and (max-width:600px){
-  .cart-container{
+
+@media screen and (max-width: 500px) {
+  .cart-container {
     grid-template-columns: repeat(1, 1fr);
   }
-  .workout-container{
+  .workout-container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+  .container-body {
+    margin-left: 10px;
   }
 }

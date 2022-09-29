@@ -1,19 +1,19 @@
-.sidebar-container{
+/* .sidebar-container{
   margin-left: 20px;
-}
-.sidebar-header{
-  margin-top:10px;
-  margin-bottom:20px;
+} */
+.sidebar-header {
+  margin-top: 10px;
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.sidebar-header h5{
+.sidebar-header h5 {
   margin-top: 10px;
   margin-bottom: 7px;
 }
-.sidebar-details{
-  background-color: #CAD5E2;
+.sidebar-details {
+  background-color: aliceblue;
   padding: 10px;
   width: 90%;
   border-radius: 8px;
@@ -22,24 +22,45 @@
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.item-details p{
+.item-details p {
   color: gray;
   margin: 5px 0;
 }
-.detail-number{
+.detail-number {
   font-size: 28px;
   color: black;
 }
-.detail-container{
+.detail-container {
   font-size: 22px;
 }
-
-.time-container{
+.break-details {
+  background-color: aliceblue;
+  padding: 10px;
+  width: 90%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.btn-time {
+  border: none;
+  border: 1px solid black;
+  border-radius: 2px;
+  background-color: coral;
+  font-size: 17px;
+  font-weight: 700;
+}
+.btn-time:hover {
+  background-color: #1faa59;
+  color: #ffffff;
+}
+.time-container {
   margin-bottom: 40px;
 }
-.time-details{
+.time-details {
   margin-bottom: 20px;
-  background-color: #CAD5E2;
+  background-color: aliceblue;
   padding: 10px;
   width: 90%;
   border-radius: 8px;
@@ -48,28 +69,34 @@
   justify-content: space-around;
 }
 
-.count-time{
+.count-time {
   font-size: 18px;
   color: gray;
 }
-.activity-container{
+.activity-container {
   padding: 10px;
   width: 90%;
   border-radius: 8px;
 }
-.btn-activity{
-width: 100%;
-border: none;
-padding: 5px;
-border-radius: 8px;
-background-color: coral;
+.btn-activity {
+  width: 100%;
+  border: none;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: coral;
 }
-.btn-activity p{
- font-size: 20px;
- font-weight: bold;
+.btn-activity p {
+  font-size: 20px;
+  font-weight: bold;
 }
-.btn-activity:hover{
+.btn-activity:hover {
   color: white;
-  background-color: #1FAA59;
-  }
+  background-color: #1faa59;
+}
 
+/* 
+@media screen and (max-width:600px){
+  .sidebar-body{
+    width: 80%;
+  }
+} */

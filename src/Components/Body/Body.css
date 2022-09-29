@@ -1,7 +1,6 @@
 .body-container{
   display: grid;
   grid-template-columns: 3fr 1fr;
-  /* margin-bottom: 50px; */
 }
 .main-bg{
   background-color: #CAD5E2;
@@ -11,7 +10,6 @@
   align-items: center;
 }
 .main-body{
-  /* border: 1px solid gray; */
   margin: 0 120px;
 }
 .main-body h1{
@@ -22,7 +20,6 @@
 
 }
 .sidebar{
-  /* border: 1px solid red; */
 }
 
 @media screen and (max-width:500px){

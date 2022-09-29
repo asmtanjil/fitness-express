@@ -48,7 +48,7 @@ const Sidebar = ({ time }) => {
           </div>
           <div>
             <h5>ASM Tanjil</h5>
-            <h>Barishal Bangladesh</h>
+            <p className="location">Barishal Bangladesh</p>
           </div>
         </div>
         <div className="sidebar-details">

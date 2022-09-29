@@ -2,26 +2,26 @@ import React, { useState } from 'react';
 import './Exercise.css'
 
 const Exercise = (props) => {
-  const {time, image, about, name, age, addHandlerToBtn} = props.cart;
+  const {time, image, about, name, age} = props.cart;
   
 
   return (
     <div>
       <div className="card-body">
           <img className="cart-img" src={image} alt="" />  
-        <div className="">
-          <h2 className="card-title text-xl text-blue-600">{name}</h2>
-          <p className="text-start text-base">{about}</p>
-          <div className="flex m-auto w-70 gap-3 text-sm text-violet-600 font-medium">
-            <p>Time Schedule: {time}</p>
-            <p>Subject :{age}</p>
+        <div>
+          <h2>{name}</h2>
+          <p>{about}</p>
+          <div>
+            <p className='card-time'>Time {time}</p>
+            <p className='card-age'>Age{age}</p>
           </div>
-          <div className="card-actions justify-end">
+          <div>
             <button
-              onClick={() => addHandlerToBtn(time)}
+              onClick={() => props.addHandlerToBtn(props.cart)}
               className="btn-card"
             >
-              ADD To Exercise
+Add to List
             </button>
           </div>
         </div>

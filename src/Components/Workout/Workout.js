@@ -23,7 +23,7 @@ const Workout = () => {
        <div className='workout-container'>
         <div className='cart-container'>
        {
-      carts.map(cart => <Exercise cart={cart} addHandlerToBtn={addHandlerToBtn}></Exercise>)
+      carts.map(cart => <Exercise cart={cart} key={cart.id} addHandlerToBtn={addHandlerToBtn}></Exercise>)
        }
        </div>
        <div>

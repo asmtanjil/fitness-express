@@ -31,7 +31,7 @@ const Sidebar = ({time}) => {
   const notify = () => toast("Wow I have Completed My Exercise!");
   let totalEx = 0;
   for(const total of time){
-    totalEx = totalEx + total.time
+    totalEx = totalEx + total.time;
   }
   return (
     <div>

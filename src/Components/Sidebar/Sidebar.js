@@ -6,38 +6,38 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Sidebar = ({ time }) => {
-  const [laiser, setLaiser] = useState(0);
+  const [breakTime, setBreakTime] = useState(0);
   const dataStore = localStorage.getItem("time");
 
   const tenSec = () => {
-    setLaiser(10);
+    setBreakTime(10);
     localStorage.setItem("time", 10);
   };
 
-  const twintySec = () => {
-    setLaiser(20);
+  const twentySec = () => {
+    setBreakTime(20);
     localStorage.setItem("time", 20);
   };
 
   const thirtySec = () => {
-    setLaiser(30);
+    setBreakTime(30);
     localStorage.setItem("time", 30);
   };
 
   const fourtySec = () => {
-    setLaiser(40);
+    setBreakTime(40);
     localStorage.setItem("time", 40);
   };
 
   const fiftySec = () => {
-    setLaiser(50);
+    setBreakTime(50);
     localStorage.setItem("time", 50);
   };
 
   const notify = () => toast("Yessss!!! I have Completed My Exercise!");
-  let totalEx = 0;
+  let totalTime = 0;
   for (const total of time) {
-    totalEx = totalEx + total.time;
+    totalTime = totalTime + total.time;
   }
   return (
     <div className="sidebar-body">
@@ -77,7 +77,7 @@ const Sidebar = ({ time }) => {
         <button onClick={() => tenSec()} className="btn-time">
           <p>10s</p>
         </button>
-        <button onClick={() => twintySec()} className="btn-time">
+        <button onClick={() => twentySec()} className="btn-time">
           <p>20s</p>
         </button>
         <button onClick={() => thirtySec()} className="btn-time">
@@ -96,7 +96,7 @@ const Sidebar = ({ time }) => {
         <div className="time-container">
           <div className="time-details">
             <h3>Exercise Time</h3>
-            <p className="count-time">{totalEx}s</p>
+            <p className="count-time">{totalTime}s</p>
           </div>
           <div className="time-details">
             <h3>Break Time</h3>

@@ -12,7 +12,7 @@ const Exercise = (props) => {
           <p className="card-detail">{about}</p>
           <div className="card-text">
             <p>Age: {age}+</p>
-            <p>Time: {time}s</p>
+            <p>Required Time: {time}s</p>
           </div>
         </div>
         <button
